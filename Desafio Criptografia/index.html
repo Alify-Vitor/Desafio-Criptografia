@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>   
+    </header>
+    <main class="corpo__texto__imagem">
+        <img class="img__alura" src="Frame 6.svg" alt="imagem alura" >
+        <section class="separação__texto">
+            
+            <div class="texto__criptografar">
+                <textarea class="digitar__texto" id="nome" wrap="hard" rows="6" autocapitalize="sentences" placeholder="Digite Aqui" name="nome"></textarea>
+                <div class="texto__aviso">
+                <div class="icon-circle">!</div> <p class="paragrafo__aviso">Apenas letras minúsculas e sem acento.</p>
+                </div>
+                <div class="buttons__criptografia">
+                        
+                        <button onclick="Funçao_criptografia()" class="button__Crip">Criptografar</button>
+                        <button onclick="Funçao_descriptografia()" class="buttons">Descriptografar</button>
+
+                    </div>
+            </div>
+            
+            <section class="texto__resultado">
+                <div class="texto__resultado__copiar" id="resultado__copiar">
+                    <textarea class="digitar__texto__resultado" id="nome2" wrap="hard" placeholder="Digite Aqui" name="nome" disabled></textarea>
+                    <button onclick="copiarTexto()" class="botaoCopiar" id="buttonCopiar">Copiar</button>
+                </div>
+                <div class="img__e__texto" id="div__resultado">
+                    <img class="texto__resultado__imagem" src="High quality products 1 1.svg" alt="img da alura">
+                    <div class="texto__resultado__text">
+                        <h1>Nenhuma mensagem encontrada</h1>
+                        <p>Digite um texto que você deseja criptografar ou descriptografar</p>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+    </main>
+     <script src="appD.js"></script>
+</body>
+</html>
